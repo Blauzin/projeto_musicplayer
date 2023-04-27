@@ -8,7 +8,8 @@ void setup(){
 public void draw(){
   layout(0, 630, 1000, 100);
   botaoPlay(width/2,680,50);
-  botaoUn(400, 680, 35);
+  botaoUn(380, 680, 35);
+  botaoRe(420, 680, 35);
 }
 
 void layout(int posx, int posy, int scaleX, int scaleY){
@@ -25,10 +26,7 @@ void botaoPlay(int posx, int posy, int scale){
 //void botao(int posx, int posy, int scale){
   //fill(#FFFFFF);
   //circle(posx, posy, scale);
-  //circle(posx + 200, posy, scale);
   //fill(#000000);
   //triangle(posx -8,posy,posx + 8,posy - 10,posx + 8,posy + 10);
-  //triangle(posx + 205,posy,posx + 190,posy - 10,posx + 190,posy + 10);
-  //rect(posx + 205, posy - 10, 5, 20);
   //rect(posx - 12,posy - 10, 5,20);
-} 
+//} 
