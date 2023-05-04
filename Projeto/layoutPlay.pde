@@ -1,3 +1,8 @@
+//Pedro 
+void layout(int posx, int posy, int scaleX, int scaleY){
+  fill(#484747);
+  rect(posx, posy, scaleX, scaleY);
+}
 void botaoUn(int posx, int posy, int scale){
   noStroke();
   fill(#FFFFFF);
