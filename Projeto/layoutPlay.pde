@@ -15,3 +15,9 @@ void botaoRe(int posx, int posy, int scale){
   triangle(posx -8,posy,posx + 8,posy - 10,posx + 8,posy + 10);
   rect(posx - 12,posy - 10, 5,20); 
 }
+void botaoPlay(int posx, int posy, int scale){
+  fill(#FFFFFF);
+  circle(posx, posy, scale);
+  fill(#000000);
+  triangle(posx + 15,posy,posx - 10,posy - 15,posx - 10,posy + 15);
+}
