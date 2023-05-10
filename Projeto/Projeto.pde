@@ -8,13 +8,15 @@ void setup(){
     background(#1C1C1C); //cor de fundo
     surface.setAlwaysOnTop(true);  
     buttonColorplay = buttonColorRe = buttonColorUn = (#FFFFFF); //define a cor do botâo como branco
+    imagensSetup();
   }
   
   void draw(){
-    layout(0, 630, 1000, 100);
-    botaoPlay(width/2,680,50, buttonColorplay);
-    botaoUn(380, 680, 35, buttonColorRe);
-    botaoRe(420, 680, 35, buttonColorUn);
+    //layout(0, 630, 1000, 100);
+    imagens();
+    //botaoPlay(width/2,680,50, buttonColorplay);
+    //botaoUn(380, 680, 35, buttonColorRe);
+    //botaoRe(420, 680, 35, buttonColorUn);
     
     
     //seção mouse
