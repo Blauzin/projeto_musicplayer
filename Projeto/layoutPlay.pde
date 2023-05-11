@@ -1,4 +1,4 @@
-//Pedro 
+//Pedro fez isso aqui
 void layout(int posx, int posy, int scaleX, int scaleY){
   rectMode(CENTER);
   fill(#3B3B3B);
@@ -37,9 +37,7 @@ void botaoPlay(int posx, int posy, int scale, color cordefundo) {
 }
 
 
-
-
-
+//Matheus fez isso
  void botaoExit(int posx, int posy, int scale, color cordefundo) {
   noStroke();
   fill(red(cordefundo), green(cordefundo), blue(cordefundo), 0); // Transparent background

@@ -1,9 +1,12 @@
 PImage musicas ,musica2 , musica3 , musica4 , musica5 , musica6;
-int x_image = 85;
-int y_image = 50;
+int x_image = 85; //posição x inicial das imagens 
+int y_image = 50; //posição y inicial das imagens
 
+//Vicente fez esse código
 
 void imagensSetup(){
+  //carregamento de imagens
+  
   musicas = loadImage("poker.jpeg");
   musicas.resize(280, 0);
   musica2 = loadImage("katy.jpeg");
@@ -21,7 +24,7 @@ void imagensSetup(){
 
 void imagens() {
   background(#304174);
-  // Draw thumbnails here
+  //Desenho das thumbnails em suas respecticas posições
   image(musicas, x_image + 580, y_image);
   image(musica2, x_image + 280, y_image);
   image(musica3, x_image - 20, 50);
