@@ -9,15 +9,16 @@ void setup(){
     surface.setAlwaysOnTop(true);  
     buttonColorplay = buttonColorRe = buttonColorUn = (#FFFFFF); //define a cor do botâo como branco
     imagensSetup();
+    setupVideo();
   }
   
-  void draw(){
+void draw(){
     //layout(0, 630, 1000, 100);
-    imagens();
+    //imagens();
+    drawVideo();
     //botaoPlay(width/2,680,50, buttonColorplay);
     //botaoUn(380, 680, 35, buttonColorRe);
     //botaoRe(420, 680, 35, buttonColorUn);
-    
     
     //seção mouse
     dPlay = dist(mouseX, mouseY, width / 2, 680); // distancia do mouse até o centro do play
@@ -31,7 +32,6 @@ void setup(){
     buttonColorplay = (#FFFFFF);
     pressTime = -1; // reseta o pressTime, 
   }
-  
 }
 //verficação click do mouse
 void mousePressed() {
@@ -52,6 +52,5 @@ void mousePressed() {
     pressTime = millis();
     //colocar aqui dentro o que o botão for fazer
     
-  }
-  
+  } 
 }

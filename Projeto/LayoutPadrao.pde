@@ -16,7 +16,7 @@ void imagensSetup(){
   musica6.resize(280 , 0);
 }
 void imagens(){
-   background(500);
+   background(#304174);
    image(musicas, x_image + 580, y_image);
    image(musica2, x_image + 280, y_image);
    image(musica3, x_image - 20, 50);
