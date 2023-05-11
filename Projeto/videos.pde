@@ -72,7 +72,12 @@ void keyPressed(){
     }
     isPlaying = !isPlaying;
   }  if (keyCode == RIGHT){ // Seta para direita para passar o vídeo em 5 segundos
-    video.jump(video.time() + 5);
+    float newTime = video.time() + 5;
+    if (newTime > video.duration()) {
+        newTime = video.duration(); //verifica se o tempo vai passar além da duração do vídeo e se sim impede que isso aconteça
+      }
+      video.jump(newTime); //coloca o vídeo no novo tempo
+      movieEvent(video); // atualiza barra de progresso de maneira manual para garantir a visualização correta
   }  if (keyCode == LEFT){ // Seta para esquerda para voltar o vídeo em 5 segundos
     float newTime = video.time() - 5;
     if (newTime < 0) {
