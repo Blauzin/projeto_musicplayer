@@ -41,7 +41,7 @@ void drawVideo(){
     int exitButtonSize = 30;
     int exitButtonX = 10;
     int exitButtonY = 10;
-    botaoExit(exitButtonX, exitButtonY, exitButtonSize, #FF0000);
+    botaoExit(exitButtonX, exitButtonY, exitButtonSize);
   
   
 }
@@ -58,7 +58,7 @@ void openVideoPlayer(String videoFilename) {
 
 
 void movieEvent(Movie m){
-  m.read();
+  m.read(); //função obrigatoria da biblioteca
 }
 
 

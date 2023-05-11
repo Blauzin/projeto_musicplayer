@@ -38,15 +38,13 @@ void botaoPlay(int posx, int posy, int scale, color cordefundo) {
 
 
 //Matheus fez isso
- void botaoExit(int posx, int posy, int scale, color cordefundo) {
+ void botaoExit(int posx, int posy, int scale) {
   noStroke();
-  fill(red(cordefundo), green(cordefundo), blue(cordefundo), 0); // Transparent background
-  rect(posx, posy, scale, scale);
-  fill(#FFFFFF); // White color for the "X"
-  stroke(#FFFFFF); // White color for the stroke
-  strokeWeight(2); // Increase the stroke weight for a thicker line
-  textSize(scale * 1); // Increase the text size for a larger "X"
+  fill(#3B3B3B);
+  rect(posx, posy + 4, scale, scale, 10);
+  fill(#FFFFFF); // branco pro x
+
+  textSize(scale * 1); // Aumentar scale 
   textAlign(CENTER, CENTER);
   text("X", posx + scale / 2, posy + scale / 2);
-  noStroke();
 }
