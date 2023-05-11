@@ -31,7 +31,7 @@ void drawVideo(){
     // Draw ball at the end of the progress bar
     float ballX = progressBarWidth;
     fill(255); // White color for the ball
-    ellipse(ballX, resizedHeight + 56, 16, 16);
+    ellipse(ballX, resizedHeight + 55, 16, 16);
     
     int exitButtonSize = 30;
     int exitButtonX = 10;

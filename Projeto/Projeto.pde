@@ -8,7 +8,7 @@ boolean isVideoPlayerOpen = false; // Flag for video player screen
 void setup() {
   size(1000, 730);
   background(#1C1C1C); // Background color
-  surface.setAlwaysOnTop(true);
+  // surface.setAlwaysOnTop(true);
   buttonColorplay = buttonColorRe = buttonColorUn = color(#FFFFFF); // Button colors set to white
   imagensSetup();
   setupVideo();
